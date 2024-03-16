@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: dsDigital;
+    src: url("../fonts/DS-DIGI.TTF");
+}
+.mainContainer{
+    background-color: #161616;
+    color: #fff;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#clockContainer{
+    height: 40vw;
+    width: 40vw;
+    background: url("../assets/clock.png") no-repeat;
+    background-size: 100%;
+    margin: auto;
+    position: relative;
+}
+#text{
+    font-family: "Truculenta", sans-serif;
+    position: absolute;
+    font-size: 2vw;
+    bottom: 15%;
+    left: 40%;
+    z-index: 2;
+}
+#digitalStream{
+    width: 16vw;
+    height: 6vw;
+    position: absolute;
+    top: 18%;
+    left: 30%;
+    font-family: dsDigital;
+    font-size: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#dhakan{
+    width: 1.5vw;
+    height: 1.5vw;
+    background-color: #008cff;
+    position: absolute;
+    top: 47.7%;
+    left: 49.3%;
+    z-index: 1;
+    border-radius: 100%;
+}
+#hour,#minute,#second{
+    position: absolute;
+    background-color: aqua;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+#hour{
+    width: 3%;
+    height: 24%;
+    top: 25.4%;
+    left: 49.4%;
+}
+#minute{
+    background-color: aliceblue;
+    width: 2%;
+    height: 33%;
+    top: 16%;
+    left: 49.7%;
+}
+#second{
+    background-color: brown;
+    width: 1%;
+    height: 36%;
+    top: 14%;
+    left: 50%;
+}
+.Bitka{
+    opacity: 0;
+}
